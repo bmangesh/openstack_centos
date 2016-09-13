@@ -1,5 +1,5 @@
 #! /bin/bash
-
+#Autor : Mangeshkumar B Bharsakle
 source /root/admin-openrc.sh
 
 openstack service create  --name keystone --description "OpenStack Identity" identity

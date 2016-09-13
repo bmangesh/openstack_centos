@@ -1,3 +1,4 @@
+#Autor : Mangeshkumar B Bharsakle
 sed -i -r "s/'horizon.example.com', 'localhost'/'*', /g"  /etc/openstack-dashboard/local_settings
 
 sed -i '/^OPENSTACK_HOST =/s/"127.0.0.1"/"controller"/' /etc/openstack-dashboard/local_settings

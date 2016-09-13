@@ -1,5 +1,5 @@
 #! /bin/bash
-
+#Autor : Mangeshkumar B Bharsakle
 yum install epel-release -y
 
 #Install the rdo-release-kilo package to enable the RDO repository:
