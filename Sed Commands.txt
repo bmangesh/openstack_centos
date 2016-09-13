@@ -1,0 +1,9 @@
+sed -i -r "s/'horizon.example.com', 'localhost'/'*', /g"  /etc/openstack-dashboard/local_settings
+
+sed -i '/^OPENSTACK_HOST =/s/"127.0.0.1"/"controller"/' /etc/openstack-dashboard/local_settings
+
+sed -i -r "s/'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',/'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',/g"  /etc/openstack-dashboard/local_settings
+
+sed -i '/\s*#.*$/d' /etc/openstack-dashboard/local_settings
+
+sed -i  '/^\s*$/d' /etc/openstack-dashboard/local_settings
